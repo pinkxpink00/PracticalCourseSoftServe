@@ -33,25 +33,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sprint3_1", "Sprint3_1\Spri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Del3", "Del3\Del3.csproj", "{85259AD9-698B-4A82-8242-CBA5D3A0565E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{3080C4DE-791E-4A61-9D69-F69C8D770868}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{3080C4DE-791E-4A61-9D69-F69C8D770868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces_2", "Interfaces_2\Interfaces_2.csproj", "{55B0A229-5A2E-46D1-9570-565C93FBF103}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces_2", "Interfaces_2\Interfaces_2.csproj", "{55B0A229-5A2E-46D1-9570-565C93FBF103}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces_3", "Interfaces_3\Interfaces_3.csproj", "{2FC0C864-FBF3-4CCD-9C15-27E86D3B406F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces_3", "Interfaces_3\Interfaces_3.csproj", "{2FC0C864-FBF3-4CCD-9C15-27E86D3B406F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{78DD353D-1D93-469B-B25C-8861C859D56C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{78DD353D-1D93-469B-B25C-8861C859D56C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{7FBC2086-0944-4B6A-B880-C7397EFDE3A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp3", "ConsoleApp3\ConsoleApp3.csproj", "{7FBC2086-0944-4B6A-B880-C7397EFDE3A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprint4_1", "Sprint4_1\Sprint4_1.csproj", "{B1370B01-5C43-4A51-AEDC-256A5F6CB914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sprint4_1", "Sprint4_1\Sprint4_1.csproj", "{B1370B01-5C43-4A51-AEDC-256A5F6CB914}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp4", "ConsoleApp4\ConsoleApp4.csproj", "{4D2C2D9F-B3B4-474B-8E7C-3B9DB29ABEC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp4", "ConsoleApp4\ConsoleApp4.csproj", "{4D2C2D9F-B3B4-474B-8E7C-3B9DB29ABEC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprint4_2", "Sprint4_2\Sprint4_2.csproj", "{3CE4C56D-3DA8-4360-AE2B-52C4F93DEB6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sprint4_2", "Sprint4_2\Sprint4_2.csproj", "{3CE4C56D-3DA8-4360-AE2B-52C4F93DEB6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp5", "ConsoleApp5\ConsoleApp5.csproj", "{AD06F00D-0340-4B81-AEFF-969A14D72C0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp5", "ConsoleApp5\ConsoleApp5.csproj", "{AD06F00D-0340-4B81-AEFF-969A14D72C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprint4_4", "Sprint4_4\Sprint4_4.csproj", "{94250836-98B6-4143-90D9-4FA52867BEC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sprint4_4", "Sprint4_4\Sprint4_4.csproj", "{94250836-98B6-4143-90D9-4FA52867BEC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprint6_1", "Sprint6_1\Sprint6_1.csproj", "{E41ADBB5-E9DB-422C-8F54-8CE70A95D9AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sprint 6_2", "sprint 6_2\sprint 6_2.csproj", "{0251AA1D-D5DC-41B4-A10F-A1760BC89D10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +163,14 @@ Global
 		{94250836-98B6-4143-90D9-4FA52867BEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94250836-98B6-4143-90D9-4FA52867BEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94250836-98B6-4143-90D9-4FA52867BEC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41ADBB5-E9DB-422C-8F54-8CE70A95D9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41ADBB5-E9DB-422C-8F54-8CE70A95D9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41ADBB5-E9DB-422C-8F54-8CE70A95D9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41ADBB5-E9DB-422C-8F54-8CE70A95D9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0251AA1D-D5DC-41B4-A10F-A1760BC89D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0251AA1D-D5DC-41B4-A10F-A1760BC89D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0251AA1D-D5DC-41B4-A10F-A1760BC89D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0251AA1D-D5DC-41B4-A10F-A1760BC89D10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
