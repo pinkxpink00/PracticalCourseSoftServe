@@ -7,8 +7,14 @@ class Program
     {
         Person tom = new Person("Tom",55);
 
-        string json = JsonSerializer.Serialize(tom);
+        var option = new JsonSerializerOptions()
+        {
+            AllowTrailingCommas = true,
+        };
+        string json = JsonSerializer.Serialize(tom,option);
         Console.WriteLine(json);
+        Person? person = JsonSerializer.Deserialize<Person>(json);
+        Console.WriteLine($"Name: {person?.Name} Age:{person?.Age}");
     }
 }
 
