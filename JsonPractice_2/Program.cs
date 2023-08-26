@@ -18,9 +18,6 @@ class Program
 			Console.WriteLine($"Name:{person?.Name}, Age: {person?.Age}");
         }
 	}
-			
-
-
 }
 
 public class Person

@@ -9,7 +9,7 @@ class Program
 
         var option = new JsonSerializerOptions()
         {
-           
+            WriteIndented = true,
             AllowTrailingCommas = true,
         };
 
