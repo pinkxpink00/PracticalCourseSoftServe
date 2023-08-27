@@ -63,29 +63,35 @@
 //WaitSleepJoin: поток заблокирован в результате действия методов Sleep или Join
 
 using System.Threading;
+using System.Threading.Channels;
+
 
 class Program
 {
+	
 	static void Main(string[] args)
 	{
-		Thread currentThread = Thread.CurrentThread;
+		Thread thread1 = new Thread(Print);
+		Thread thread2 = new Thread(new ThreadStart(Print));
+		Thread thread3 = new Thread(() => Console.WriteLine("Hello Thread"));
+		Thread thread = new Thread(Print);
 
-        Console.WriteLine($"Name Thread:{currentThread.Name}");
-		currentThread.Name = "Main Thread";
-		Console.WriteLine($"Name Thread:{currentThread.Name}");
-
-        Console.WriteLine($"Thread is Alive: {currentThread.IsAlive}");
-		Console.WriteLine($"ID:{currentThread.ManagedThreadId}");
-
-		for(int i = 0; i < 10; i++)
+		thread.Start();
+		for (int i = 0; i < 5; i++)
 		{
-			Thread.Sleep(500);
-            Console.WriteLine(i);
+            Console.WriteLine("Main thread:{0}",i);
+			Thread.Sleep(300);
         }
 
-		Console.WriteLine($"Current thread priority:{currentThread.Priority}");
-		Console.WriteLine($"Thread status:{currentThread.ThreadState}");
+		void Print()
+		{
+			for (int i = 0; i < 5; i++)
+			{
+                Console.WriteLine("Second thread:{0}",i);
+				Thread.Sleep(500);
+            }
+		}
 
-
-    }
+		
+	}
 }
