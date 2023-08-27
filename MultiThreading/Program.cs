@@ -76,7 +76,16 @@ class Program
 
         Console.WriteLine($"Thread is Alive: {currentThread.IsAlive}");
 		Console.WriteLine($"ID:{currentThread.ManagedThreadId}");
+
+		for(int i = 0; i < 10; i++)
+		{
+			Thread.Sleep(500);
+            Console.WriteLine(i);
+        }
+
 		Console.WriteLine($"Current thread priority:{currentThread.Priority}");
 		Console.WriteLine($"Thread status:{currentThread.ThreadState}");
+
+
     }
 }
