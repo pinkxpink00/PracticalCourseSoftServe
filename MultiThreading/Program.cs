@@ -66,19 +66,29 @@ using System.Threading;
 using System.Threading.Channels;
 class Program
 {
-
+	static object locker = new();
+	int x = 0;
 	static void Main(string[] args)
 	{
-		Person p1 = new Person("Bob", 53);
-		Thread th1 = new Thread(p1.Print);
-		th1.Start();
-	}
-	record class Person(string name, int age)
-	{
-		public void Print()
+		for (int i = 0; i < 6; i++)
 		{
-            Console.WriteLine($"Name = {name}");
-            Console.WriteLine($"Age = {age}");
-        }
+			Thread thread1 = new(Print);
+			thread1.Name = $"Поток:{i}";
+			thread1.Start();
+		}
+	}
+
+	static void Print()
+	{
+		int x = 1;
+		
+		
+			for (int i = 1; i < 6; i++)
+			{
+				Console.WriteLine($"{Thread.CurrentThread.Name}: {x}");
+				x++;
+				Thread.Sleep(1000);
+			}
+		
 	}
 }
