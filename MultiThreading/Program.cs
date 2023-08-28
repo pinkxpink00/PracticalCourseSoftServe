@@ -69,28 +69,16 @@ class Program
 
 	static void Main(string[] args)
 	{
-		int num = 4;
-
-		Thread th1 = new Thread(Print);
-		th1.Start(num);
-
-		string word = "hello";
-		Thread th2 = new Thread(Print);
-		th2.Start(word);
-	
+		Person p1 = new Person("Bob", 53);
+		Thread th1 = new Thread(p1.Print);
+		th1.Start();
 	}
-
-	static void Print(object? obj)
+	record class Person(string name, int age)
 	{
-		if (obj is int n)
+		public void Print()
 		{
-			Thread.Sleep(1000);
-            Console.WriteLine($"n*n={n*n}");
-        }
-
-		if (obj is string s)
-		{
-            Console.WriteLine(s);
+            Console.WriteLine($"Name = {name}");
+            Console.WriteLine($"Age = {age}");
         }
 	}
 }
