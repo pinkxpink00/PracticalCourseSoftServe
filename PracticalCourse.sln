@@ -65,21 +65,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonOptionsPractice", "Json
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonPropertyPractice", "JsonPropertyPractice\JsonPropertyPractice.csproj", "{16B2CD2E-09D5-4447-A4B1-03472849046F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML_1", "XML_1\XML_1.csproj", "{57974B7E-2D36-4A99-82B8-6CA134652C97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XML_1", "XML_1\XML_1.csproj", "{57974B7E-2D36-4A99-82B8-6CA134652C97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML_2", "XML_2\XML_2.csproj", "{4847655F-B00A-464D-8CCF-0DA5ED332407}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XML_2", "XML_2\XML_2.csproj", "{4847655F-B00A-464D-8CCF-0DA5ED332407}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq_1", "linq_1\linq_1.csproj", "{B03B032B-D355-489D-9380-18E3195DA18C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "linq_1", "linq_1\linq_1.csproj", "{B03B032B-D355-489D-9380-18E3195DA18C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsMeth_1", "ExtensionsMeth_1\ExtensionsMeth_1.csproj", "{DFD4B4BB-D944-41C1-875A-AF09B1C0E739}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionsMeth_1", "ExtensionsMeth_1\ExtensionsMeth_1.csproj", "{DFD4B4BB-D944-41C1-875A-AF09B1C0E739}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintLSer", "SprintLinqSer\SprintLSer.csproj", "{73F412E1-D781-4CB5-8767-487A95F154EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SprintLSer", "SprintLinqSer\SprintLSer.csproj", "{73F412E1-D781-4CB5-8767-487A95F154EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprint_2Ser", "Sprint_2Ser\Sprint_2Ser.csproj", "{12C96DEA-6A66-4CEA-9DB6-0FD873F882AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sprint_2Ser", "Sprint_2Ser\Sprint_2Ser.csproj", "{12C96DEA-6A66-4CEA-9DB6-0FD873F882AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp7", "ConsoleApp7\ConsoleApp7.csproj", "{02A046F5-CE0D-480D-88AC-81CC2188E6D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp7", "ConsoleApp7\ConsoleApp7.csproj", "{02A046F5-CE0D-480D-88AC-81CC2188E6D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp8", "ConsoleApp8\ConsoleApp8.csproj", "{F9C93283-F646-4299-9ECF-F338B0358A05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp8", "ConsoleApp8\ConsoleApp8.csproj", "{F9C93283-F646-4299-9ECF-F338B0358A05}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsPracticeForMySelf", "CollectionsPracticeForMySelf\CollectionsPracticeForMySelf.csproj", "{B8370BFC-72C0-4851-AAA8-7F4DAAB93FA8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collections_2", "Collections_2\Collections_2.csproj", "{79B522F7-F9D6-4098-A9EC-84B8826EA502}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreading", "MultiThreading\MultiThreading.csproj", "{F0209179-CA47-4A28-A8B5-2F2E0FBDDEE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -243,6 +249,18 @@ Global
 		{F9C93283-F646-4299-9ECF-F338B0358A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9C93283-F646-4299-9ECF-F338B0358A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9C93283-F646-4299-9ECF-F338B0358A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8370BFC-72C0-4851-AAA8-7F4DAAB93FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8370BFC-72C0-4851-AAA8-7F4DAAB93FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8370BFC-72C0-4851-AAA8-7F4DAAB93FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8370BFC-72C0-4851-AAA8-7F4DAAB93FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B522F7-F9D6-4098-A9EC-84B8826EA502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B522F7-F9D6-4098-A9EC-84B8826EA502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B522F7-F9D6-4098-A9EC-84B8826EA502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B522F7-F9D6-4098-A9EC-84B8826EA502}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0209179-CA47-4A28-A8B5-2F2E0FBDDEE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0209179-CA47-4A28-A8B5-2F2E0FBDDEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0209179-CA47-4A28-A8B5-2F2E0FBDDEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0209179-CA47-4A28-A8B5-2F2E0FBDDEE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

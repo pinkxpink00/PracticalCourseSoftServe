@@ -64,34 +64,19 @@
 
 using System.Threading;
 using System.Threading.Channels;
-
-
 class Program
 {
-	
+
 	static void Main(string[] args)
 	{
-		Thread thread1 = new Thread(Print);
-		Thread thread2 = new Thread(new ThreadStart(Print));
-		Thread thread3 = new Thread(() => Console.WriteLine("Hello Thread"));
-		Thread thread = new Thread(Print);
+		Thread th1 = new Thread(new ParameterizedThreadStart(Print));
+		Thread th2 = new Thread(Print);
+		Thread th3 = new Thread(message => Console.WriteLine(message));
 
-		thread.Start();
-		for (int i = 0; i < 5; i++)
-		{
-            Console.WriteLine("Main thread:{0}",i);
-			Thread.Sleep(300);
-        }
-
-		void Print()
-		{
-			for (int i = 0; i < 5; i++)
-			{
-                Console.WriteLine("Second thread:{0}",i);
-				Thread.Sleep(500);
-            }
-		}
-
-		
+		th1.Start("Hello");
+		th2.Start("Privet");
+		th3.Start("siu");
 	}
+
+	static void Print(object? message) => Console.WriteLine(message);
 }
