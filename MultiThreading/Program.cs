@@ -66,29 +66,46 @@ using System.Threading;
 using System.Threading.Channels;
 class Program
 {
-	static object locker = new();
-	int x = 0;
 	static void Main(string[] args)
 	{
-		for (int i = 0; i < 6; i++)
+		for (int i = 1; i< 6; i++)
 		{
-			Thread thread1 = new(Print);
-			thread1.Name = $"Поток:{i}";
-			thread1.Start();
+			Reader reader = new Reader(i);
 		}
 	}
+}
 
-	static void Print()
+class Reader
+{
+	static Semaphore sem = new Semaphore(3, 3, "libraryTest");
+
+	Thread thread;
+	int count = 3;
+
+	public Reader(int i)
 	{
-		int x = 1;
-		
-		
-			for (int i = 1; i < 6; i++)
-			{
-				Console.WriteLine($"{Thread.CurrentThread.Name}: {x}");
-				x++;
-				Thread.Sleep(1000);
-			}
-		
+		thread = new Thread(Read);
+		thread.Name = $"Reader: {i}";
+		thread.Start();
+	}
+	public void Read()
+	{
+		while (count > 0)
+		{
+			sem.WaitOne();
+
+
+			Console.WriteLine($"{Thread.CurrentThread.Name} входит в библиотеку");
+
+			Console.WriteLine($"{Thread.CurrentThread.Name} читает");
+			Thread.Sleep(1000);
+
+			Console.WriteLine($"{Thread.CurrentThread.Name} покидает библиотеку");
+
+			sem.Release();
+
+			count--;
+			Thread.Sleep(1000);
+		}
 	}
 }
