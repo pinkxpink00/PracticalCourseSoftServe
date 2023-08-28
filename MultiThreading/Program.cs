@@ -69,14 +69,28 @@ class Program
 
 	static void Main(string[] args)
 	{
-		Thread th1 = new Thread(new ParameterizedThreadStart(Print));
-		Thread th2 = new Thread(Print);
-		Thread th3 = new Thread(message => Console.WriteLine(message));
+		int num = 4;
 
-		th1.Start("Hello");
-		th2.Start("Privet");
-		th3.Start("siu");
+		Thread th1 = new Thread(Print);
+		th1.Start(num);
+
+		string word = "hello";
+		Thread th2 = new Thread(Print);
+		th2.Start(word);
+	
 	}
 
-	static void Print(object? message) => Console.WriteLine(message);
+	static void Print(object? obj)
+	{
+		if (obj is int n)
+		{
+			Thread.Sleep(1000);
+            Console.WriteLine($"n*n={n*n}");
+        }
+
+		if (obj is string s)
+		{
+            Console.WriteLine(s);
+        }
+	}
 }
