@@ -2,15 +2,20 @@
 {
 	static void Main(string[] args)
 	{
-	    Task task = new Task(() => Console.WriteLine("Hello Task"));
-		task.Start();
-		task.Wait();
+        Console.WriteLine("Main Starts");
+		Action action = new Action(TaskTest);
+		Task ts1 = new Task(action);
+	    
+		ts1.RunSynchronously();
+        Console.WriteLine("Main Ends");
 
-        Task task1 = Task.Factory.StartNew(() => Console.WriteLine("Hello Factory Task!"));
-		task1.Wait();
+    }
 
-		Task task2 = Task.Run(() => Console.WriteLine("Hello task Run "));
-		task2.Wait();
-	}
+	static void TaskTest()
+	{
+        Console.WriteLine("#Task Starts");
+		Thread.Sleep(1000);
+		Console.WriteLine("#Task Ends");
+    }
 
 }
