@@ -13,16 +13,20 @@
 
 class MainThreadProgram
 {
-	public void Calculator()
+	public static (Thread,Thread) Calculator()
 	{
 		Thread productThread = new Thread(Product);
 		Thread sumThread = new Thread(Sum);
+		productThread.Start();
 		sumThread.Start();
+
+		return(sumThread,productThread);
+		
 
 
 	}
 
-	public void Product()
+	public static void Product()
 	{
 		int productResult = 1;
 
@@ -36,7 +40,7 @@ class MainThreadProgram
 		Console.WriteLine($"Product is: {productResult}");
 	}
 
-	public void Sum()
+	public static void Sum()
 	{
 		string[] numberEnding = { "st", "nd", "rd", "th", "th" };
 		int sum = 0;
@@ -47,14 +51,5 @@ class MainThreadProgram
 			sum += number;
 		}
 		Console.WriteLine($"Sum is: {sum}");
-	}
-}
-
-class Program
-{
-	static void Main()
-	{
-	 MainThreadProgram mainThreadProgram = new MainThreadProgram();
-		mainThreadProgram.Calculator();
 	}
 }
