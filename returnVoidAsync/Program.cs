@@ -2,14 +2,14 @@
 {
 	static async Task Main(string[] args)
 	{
-		var task = PrintAsync("Hello Tasks");
-		Console.WriteLine("Hello World");
-		await task;
-    }
+		int n1 = await SquareAsync(5);
+		int n2 = await SquareAsync(3);
 
-	static async Task PrintAsync(string message)
+		Console.WriteLine($"n1 = {n1}  n2 = {n2}");
+    }
+	static async Task<int> SquareAsync(int n)
 	{
-		await Task.Delay(3000);
-		Console.WriteLine(message);  
+		await Task.Delay(1000);
+		return n*n;
 	}
 }
