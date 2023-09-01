@@ -1,25 +1,15 @@
 ﻿class Program
 {
-	static async Task Main(string[] args)
+	static void Main(string[] args)
 	{
-		await PrintAsync();
-		Console.WriteLine("Some actions in method Main");
+		PrintName("German");
+		PrintName("Lucas");
+		PrintName("Bobo");
+	}
 
-    }
-	
-	static void Print()
+	static void PrintName(string name)
 	{
-        Console.WriteLine("Hello C#");
-    }
-
-	static async Task PrintAsync()
-	{
-		
-		Console.WriteLine("Start Async");
-		await Task.Delay(4000);
-		await Task.Run(()=>Print());
-		await Task.Delay(2000);
-		Console.WriteLine("End Async");
-
+		Thread.Sleep(3000);
+        Console.WriteLine(name);
     }
 }
