@@ -9,14 +9,16 @@
 	
 	static void Print()
 	{
-		Thread.Sleep(3000);
         Console.WriteLine("Hello C#");
     }
 
 	static async Task PrintAsync()
 	{
+		
 		Console.WriteLine("Start Async");
+		await Task.Delay(4000);
 		await Task.Run(()=>Print());
+		await Task.Delay(2000);
 		Console.WriteLine("End Async");
 
     }
