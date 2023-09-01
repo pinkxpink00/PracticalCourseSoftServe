@@ -2,14 +2,12 @@
 {
 	static async Task Main()
 	{
-		Person person = await GetPersonAsync("Tom");
-        Console.WriteLine(person.name);
-
-    }
-	static async Task<Person> GetPersonAsync(string name)
+		var result = await AddSync(4, 5);
+		Console.WriteLine(result);
+	}
+	static ValueTask<int> AddSync(int a, int b)
 	{
-		await Task.Delay(1000);
-		return new Person(name);
+		return new ValueTask<int>(a + b);
 	}
 }
-public record class Person(string name);
+
