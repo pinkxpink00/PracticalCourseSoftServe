@@ -1,19 +1,28 @@
 ﻿class Program
 {
-	static async Task Main()
+	static async Task Main(string[] args)
 	{
-		await foreach (var number in GetNumbersAsync())
+		Repository repository = new Repository();
+		IAsyncEnumerable<string> data = repository.GetDataAsync();
+
+		await foreach (var item in data)
 		{
-			Console.WriteLine(number);
+			Console.WriteLine(item);
 		}
 	}
+}
 
-	static async IAsyncEnumerable<int> GetNumbersAsync()
+class Repository
+{
+	string[] data = { "German", "Tom", "Bob", "Lucas" };
+
+	public async IAsyncEnumerable<string> GetDataAsync()
 	{
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < data.Length; i++)
 		{
+			Console.WriteLine($"Get {i + 1} element");
 			await Task.Delay(1000);
-			yield return i;
+			yield return data[i];
 		}
 	}
 }
