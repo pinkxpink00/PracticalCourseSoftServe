@@ -2,10 +2,10 @@
 {
 	static async Task Main(string[] args)
 	{
-
-		await Task.Delay(2500);
-		await PrintAsync("Hello");
-	}
+		var task = PrintAsync("Hello Tasks");
+		Console.WriteLine("Hello World");
+		await task;
+    }
 
 	static async Task PrintAsync(string message)
 	{
