@@ -1,17 +1,24 @@
-﻿class Program
+﻿using System.Runtime.InteropServices;
+
+class Program
 {
 	static async Task Main()
 	{
-		var german = PrintAsync("German");
-		var jett = PrintAsync("Jett");
-		var luca = PrintAsync("Luca");
+		var task1 = SquareAsync(5);
+		var task2 = SquareAsync(4);
+		var task3 = SquareAsync(6);
 
-		await Task.WhenAny(german, jett, luca);
+		int[] result = await Task.WhenAll(task1, task2, task3);
+
+		foreach (int i in result)
+		{
+			Console.WriteLine(i);
+		}
 	}
 
-	static async Task PrintAsync(string message)
+	static async Task<int> SquareAsync(int n)
 	{
-		await Task.Delay(new Random().Next(1000,2000));
-		Console.WriteLine(message);
+		await Task.Delay(1000);
+		return n*n;
 	}
 }
