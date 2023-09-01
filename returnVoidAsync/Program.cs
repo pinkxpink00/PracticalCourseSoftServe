@@ -1,15 +1,15 @@
 ﻿class Program
 {
-	static async Task Main(string[] args)
+	static async Task Main()
 	{
-		int n1 = await SquareAsync(5);
-		int n2 = await SquareAsync(3);
+		Person person = await GetPersonAsync("Tom");
+        Console.WriteLine(person.name);
 
-		Console.WriteLine($"n1 = {n1}  n2 = {n2}");
     }
-	static async Task<int> SquareAsync(int n)
+	static async Task<Person> GetPersonAsync(string name)
 	{
 		await Task.Delay(1000);
-		return n*n;
+		return new Person(name);
 	}
 }
+public record class Person(string name);
