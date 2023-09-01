@@ -111,6 +111,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "returnVoidAsync", "returnVo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskWhen", "TaskWhen\TaskWhen.csproj", "{AD8C81BA-1A93-4976-9BBC-6F3B2C59FF10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exceptionAsync", "exceptionAsync\exceptionAsync.csproj", "{395AB215-5F04-4D26-994D-D6D249C08C8E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -333,6 +335,10 @@ Global
 		{AD8C81BA-1A93-4976-9BBC-6F3B2C59FF10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD8C81BA-1A93-4976-9BBC-6F3B2C59FF10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD8C81BA-1A93-4976-9BBC-6F3B2C59FF10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{395AB215-5F04-4D26-994D-D6D249C08C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395AB215-5F04-4D26-994D-D6D249C08C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395AB215-5F04-4D26-994D-D6D249C08C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395AB215-5F04-4D26-994D-D6D249C08C8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
