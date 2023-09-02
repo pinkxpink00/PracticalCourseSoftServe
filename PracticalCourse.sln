@@ -115,6 +115,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exceptionAsync", "exception
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asyncStream", "asyncStream\asyncStream.csproj", "{76FD6B77-EA5B-4299-B24D-D3BB924C4D26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintAsync_1", "SprintAsync_1\SprintAsync_1.csproj", "{C797574E-F216-4BB2-8BA8-1D23CA4BA49C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintAsync_2", "SprintAsync_2\SprintAsync_2.csproj", "{8E7DE310-1CF3-4134-A582-A8026C115A97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -345,6 +349,14 @@ Global
 		{76FD6B77-EA5B-4299-B24D-D3BB924C4D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76FD6B77-EA5B-4299-B24D-D3BB924C4D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76FD6B77-EA5B-4299-B24D-D3BB924C4D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C797574E-F216-4BB2-8BA8-1D23CA4BA49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C797574E-F216-4BB2-8BA8-1D23CA4BA49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C797574E-F216-4BB2-8BA8-1D23CA4BA49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C797574E-F216-4BB2-8BA8-1D23CA4BA49C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E7DE310-1CF3-4134-A582-A8026C115A97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7DE310-1CF3-4134-A582-A8026C115A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7DE310-1CF3-4134-A582-A8026C115A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7DE310-1CF3-4134-A582-A8026C115A97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
