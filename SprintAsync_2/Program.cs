@@ -32,7 +32,7 @@ public static class CalcAsync
 
 		if (task.Status != previousStatus)
 		{
-			Console.WriteLine(task.Status.ToString());
+			Console.WriteLine(task.Status);
 			previousStatus = task.Status;
 			
 		}

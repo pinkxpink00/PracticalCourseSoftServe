@@ -105,19 +105,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsynchronProg", "AsynchronP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CancellationTokenAsync", "CancellationTokenAsync\CancellationTokenAsync.csproj", "{A23FCA19-DAAA-4D3B-8134-55104EA83746}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async_v2", "Async_v2\Async_v2.csproj", "{901D1D95-D9CE-4476-80CF-CB73BB3A9691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async_v2", "Async_v2\Async_v2.csproj", "{901D1D95-D9CE-4476-80CF-CB73BB3A9691}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "returnVoidAsync", "returnVoidAsync\returnVoidAsync.csproj", "{2CBB2AF5-7935-4FA8-953D-81DD2324CE04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "returnVoidAsync", "returnVoidAsync\returnVoidAsync.csproj", "{2CBB2AF5-7935-4FA8-953D-81DD2324CE04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskWhen", "TaskWhen\TaskWhen.csproj", "{AD8C81BA-1A93-4976-9BBC-6F3B2C59FF10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskWhen", "TaskWhen\TaskWhen.csproj", "{AD8C81BA-1A93-4976-9BBC-6F3B2C59FF10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exceptionAsync", "exceptionAsync\exceptionAsync.csproj", "{395AB215-5F04-4D26-994D-D6D249C08C8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "exceptionAsync", "exceptionAsync\exceptionAsync.csproj", "{395AB215-5F04-4D26-994D-D6D249C08C8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "asyncStream", "asyncStream\asyncStream.csproj", "{76FD6B77-EA5B-4299-B24D-D3BB924C4D26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "asyncStream", "asyncStream\asyncStream.csproj", "{76FD6B77-EA5B-4299-B24D-D3BB924C4D26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintAsync_1", "SprintAsync_1\SprintAsync_1.csproj", "{C797574E-F216-4BB2-8BA8-1D23CA4BA49C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SprintAsync_1", "SprintAsync_1\SprintAsync_1.csproj", "{C797574E-F216-4BB2-8BA8-1D23CA4BA49C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintAsync_2", "SprintAsync_2\SprintAsync_2.csproj", "{8E7DE310-1CF3-4134-A582-A8026C115A97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SprintAsync_2", "SprintAsync_2\SprintAsync_2.csproj", "{8E7DE310-1CF3-4134-A582-A8026C115A97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sprintAsync_3", "sprintAsync_3\sprintAsync_3.csproj", "{6166E748-8AA1-45E6-9F0F-172ECC25C764}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintAsync_5", "SprintAsync_5\SprintAsync_5.csproj", "{9916CB17-9674-4A4F-9397-DD6C82ACCB7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -357,6 +361,14 @@ Global
 		{8E7DE310-1CF3-4134-A582-A8026C115A97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E7DE310-1CF3-4134-A582-A8026C115A97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E7DE310-1CF3-4134-A582-A8026C115A97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6166E748-8AA1-45E6-9F0F-172ECC25C764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6166E748-8AA1-45E6-9F0F-172ECC25C764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6166E748-8AA1-45E6-9F0F-172ECC25C764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6166E748-8AA1-45E6-9F0F-172ECC25C764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9916CB17-9674-4A4F-9397-DD6C82ACCB7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9916CB17-9674-4A4F-9397-DD6C82ACCB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9916CB17-9674-4A4F-9397-DD6C82ACCB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9916CB17-9674-4A4F-9397-DD6C82ACCB7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
