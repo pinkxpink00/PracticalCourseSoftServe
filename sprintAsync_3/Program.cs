@@ -9,13 +9,42 @@ class Calc
 	}
 }
 
-class CalcAsync
+public class CalcAsync
 {
-	static async Task<int> SeqAsync(int n)
+	public static async Task<int> SeqAsync(int n)
 	{
-		int result = await Task.Run(() => Calc.Seq(n));
-		Console.WriteLine($"Seq[{n}] = {result}");
+		return await Task.Run(() => Calc.Seq(n));
 	}
 
-	
+	public static async Task PrintSeqElementsConsequentlyAsync(int quant)
+	{
+		for (int i = 1; i <= quant; i++)
+		{
+			int result = await SeqAsync(i);
+			Console.WriteLine($"Seq[{i}] = {result}");
+		}
+	}
+
+	public static async Task PrintSeqElementsInParallelAsync(int quant)
+	{
+		Task<int>[] tasks = GetSeqAsyncTasks(quant);
+		await Task.WhenAll(tasks);
+
+		for (int i = 1; i <= quant; i++)
+		{
+			int result = tasks[i - 1].Result;
+			Console.WriteLine($"Seq[{i}] = {result}");
+		}
+	}
+
+	public static Task<int>[] GetSeqAsyncTasks(int quant)
+	{
+		Task<int>[] tasks = new Task<int>[quant];
+		for (int i = 1; i <= quant; i++)
+		{
+			int index = i;
+			tasks[i - 1] = Task.Run(() => Calc.Seq(index));
+		}
+		return tasks;
+	}
 }

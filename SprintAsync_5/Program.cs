@@ -13,40 +13,45 @@ class Calc
 }
 public class CalcAsync
 {
-	public async static void PrintSpecificSeqElementsAsync(int[] array)
+	public static async void PrintSpecificSeqElementsAsync(int[] array)
 	{
-		var exeptions = new List<Exception>();
-		var tasks = new List<Task>();
-		foreach (var n in array)
+		List<Exception> exceptions = new List<Exception>();
+		List<Task> tasks = new List<Task>();
+
+		foreach (int number in array)
 		{
+
 			tasks.Add(Task.Run(() =>
 			{
 				try
 				{
-					Console.WriteLine($"Seq[{n}] = {Calc.Seq(n)}");
+					int result = Calc.Seq(number);
+					Console.WriteLine($"Seq[{number}] = {result}");
 				}
 				catch (Exception ex)
 				{
-					exeptions.Add(ex);
+					exceptions.Add(ex);
 				}
 			}));
-
 		}
+
 		await Task.WhenAll(tasks);
-		if (exeptions.Count > 0)
+		if (exceptions.Count > 0)
 		{
-			foreach (var ex in exeptions)
+
+			foreach (var ex in exceptions)
 			{
 				Console.WriteLine("Inner exception: " + ex.Message);
 			}
 		}
 	}
 }
-
 class Program
 {
 	static async Task Main(string[] args)
 	{
+
+
 		int[] numbers = { -3, -5, -12, 0 };
 		CalcAsync.PrintSpecificSeqElementsAsync(numbers);
 		Thread.Sleep(1000);
