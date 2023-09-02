@@ -1,14 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-class Calc
-{
-	public static int Seq(int n)
-	{
-		return n * n;
-	}
-}
-
 public class CalcAsync
 {
 	public static async Task<int> SeqAsync(int n)
@@ -16,16 +8,18 @@ public class CalcAsync
 		return await Task.Run(() => Calc.Seq(n));
 	}
 
-	public static async Task PrintSeqElementsConsequentlyAsync(int quant)
+	public static async void PrintSeqElementsConsequentlyAsync(int quant)
 	{
 		for (int i = 1; i <= quant; i++)
 		{
 			int result = await SeqAsync(i);
 			Console.WriteLine($"Seq[{i}] = {result}");
+
 		}
+
 	}
 
-	public static async Task PrintSeqElementsInParallelAsync(int quant)
+	public static async void PrintSeqElementsInParallelAsync(int quant)
 	{
 		Task<int>[] tasks = GetSeqAsyncTasks(quant);
 		await Task.WhenAll(tasks);
@@ -34,6 +28,7 @@ public class CalcAsync
 		{
 			int result = tasks[i - 1].Result;
 			Console.WriteLine($"Seq[{i}] = {result}");
+
 		}
 	}
 
