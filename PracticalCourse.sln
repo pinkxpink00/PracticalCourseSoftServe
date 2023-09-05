@@ -135,6 +135,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID_ISP", "SOLID_ISP\SOLI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID_DIP", "SOLID_DIP\SOLID_DIP.csproj", "{3C689BBB-1D44-457A-A239-10923B4C2C21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprint_Solid_v1", "Sprint_Solid_v1\Sprint_Solid_v1.csproj", "{859A6BDF-F6FB-4390-9F2A-EFA96EEFD964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sprintSOLID_v2", "sprintSOLID_v2\sprintSOLID_v2.csproj", "{36B3837D-EC17-4770-B191-69787AC4FB34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +409,14 @@ Global
 		{3C689BBB-1D44-457A-A239-10923B4C2C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C689BBB-1D44-457A-A239-10923B4C2C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C689BBB-1D44-457A-A239-10923B4C2C21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{859A6BDF-F6FB-4390-9F2A-EFA96EEFD964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859A6BDF-F6FB-4390-9F2A-EFA96EEFD964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859A6BDF-F6FB-4390-9F2A-EFA96EEFD964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859A6BDF-F6FB-4390-9F2A-EFA96EEFD964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B3837D-EC17-4770-B191-69787AC4FB34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B3837D-EC17-4770-B191-69787AC4FB34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B3837D-EC17-4770-B191-69787AC4FB34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36B3837D-EC17-4770-B191-69787AC4FB34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
