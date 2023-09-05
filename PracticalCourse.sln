@@ -123,6 +123,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sprintAsync_3", "sprintAsyn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintAsync_5", "SprintAsync_5\SprintAsync_5.csproj", "{9916CB17-9674-4A4F-9397-DD6C82ACCB7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprintAsync_4", "SprintAsync_4\SprintAsync_4.csproj", "{D101FE27-721D-4DBD-BA03-97E2216BB1D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -369,6 +371,10 @@ Global
 		{9916CB17-9674-4A4F-9397-DD6C82ACCB7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9916CB17-9674-4A4F-9397-DD6C82ACCB7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9916CB17-9674-4A4F-9397-DD6C82ACCB7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D101FE27-721D-4DBD-BA03-97E2216BB1D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D101FE27-721D-4DBD-BA03-97E2216BB1D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D101FE27-721D-4DBD-BA03-97E2216BB1D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D101FE27-721D-4DBD-BA03-97E2216BB1D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
