@@ -2,18 +2,26 @@
 
 class Program
 {
-	static void Main(string[] args)
-	{
-        Type myType = typeof(Person);
-        Console.WriteLine(myType.FullName);
+    static void Main(string[] args)
+    {
+        Type myType = typeof(PeopleTypes.Person);
+        Console.WriteLine($"Full Name:{myType.FullName}");
+        Console.WriteLine($"Name:{myType.Name}");
+        Console.WriteLine($"Namespace:{myType.Namespace}");
+        Console.WriteLine($"IsStruct:{myType.IsValueType}");
+        Console.WriteLine($"IsClass:{myType.IsClass}");
+
     }
 }
-class Person
+namespace PeopleTypes
 {
-	string Name { get; }
-
-    public Person(string name)
+    class Person
     {
-        this.Name = name;
+        string Name { get; }
+
+        public Person(string name)
+        {
+            this.Name = name;
+        }
     }
 }
