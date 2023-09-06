@@ -6,7 +6,7 @@ class Program
     {
         Type myType = typeof(Person);
 
-        foreach (MemberInfo memberInfo in myType.GetMembers())
+        foreach (MemberInfo memberInfo in myType.GetMembers(BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.GetProperty| BindingFlags.Instance))
         {
             Console.WriteLine($"{memberInfo.DeclaringType} {memberInfo.MemberType} {memberInfo.Name}");
         }
