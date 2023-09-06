@@ -1,4 +1,14 @@
-﻿public class Customer
+﻿using System.ComponentModel;
+interface INotification
+{
+	void SendNotification();
+}
+interface INotificationToDB
+{
+	void AddNotificationToDB();
+}
+
+public class Customer
 {
 	public static void Register(string email, string password)
 	{
@@ -17,14 +27,17 @@
 		smsService.Number = "111 111 111";
 		smsService.SmsText = "User successfully registered...";
 		smsService.SendNotification();
+		//smsService.AddNotificationToDB();
 	}
 }
 public abstract class NotificationService
 {
 	public abstract void SendNotification();
+	public abstract void AddNotificationToDB();
+
 }
 
-public class MailService : NotificationService
+public class MailService : NotificationService,INotification,INotificationToDB
 {
 	public string Email { get; set; }
 	public string EmailTitle { get; set; }
@@ -45,9 +58,13 @@ public class MailService : NotificationService
 	{
 		Console.WriteLine($"Mail:{Email}, Title:{EmailTitle}, Body:{EmailBody}");
 	}
+	public override void AddNotificationToDB()
+	{
+		
+	}
 }
 
-public class SmsService : NotificationService
+public class SmsService : NotificationService,INotification
 {
 	public string Number { get; set; }
 	public string SmsText { get; set; }
@@ -55,6 +72,10 @@ public class SmsService : NotificationService
 	public override void SendNotification()
 	{
 		Console.WriteLine("Number:{0}, Message:{1}", Number, SmsText);
+	}
+	public override void AddNotificationToDB()
+	{
+		throw new Exception("Not allowed");
 	}
 }
 
