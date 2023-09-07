@@ -27,7 +27,7 @@
         return true;
 	}
 }
-
+[AttributeUsage(AttributeTargets.All)]
 class AgeVallidationAttribute : Attribute
 {
 	public int Age { get; }

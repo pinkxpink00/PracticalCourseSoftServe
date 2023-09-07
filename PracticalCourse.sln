@@ -151,17 +151,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflectionv1", "Reflectionv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Applying reflection and exploring types", "Applying reflection and exploring types\Applying reflection and exploring types.csproj", "{AED6FC3F-075A-41A4-9743-111EB18A8A25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exploring method and ctors with reflection", "Exploring method and ctors with reflection\Exploring method and ctors with reflection.csproj", "{219B31EF-E8A9-4054-8BF7-93BDF6551645}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exploring method and ctors with reflection", "Exploring method and ctors with reflection\Exploring method and ctors with reflection.csproj", "{219B31EF-E8A9-4054-8BF7-93BDF6551645}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvokeReflection", "InvokeReflection\InvokeReflection.csproj", "{78187E3B-22C2-4806-ACD6-3168C530143F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvokeReflection", "InvokeReflection\InvokeReflection.csproj", "{78187E3B-22C2-4806-ACD6-3168C530143F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetInfoAboutFieldReflection", "GetInfoAboutFieldReflection\GetInfoAboutFieldReflection.csproj", "{5A3319EB-8A72-4BD0-95D2-ED9E5492F084}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetInfoAboutFieldReflection", "GetInfoAboutFieldReflection\GetInfoAboutFieldReflection.csproj", "{5A3319EB-8A72-4BD0-95D2-ED9E5492F084}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Get&Change Fields", "Get&Change Fields\Get&Change Fields.csproj", "{7D73ADBE-B27B-4F60-8029-7AE20A856C7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Get&Change Fields", "Get&Change Fields\Get&Change Fields.csproj", "{7D73ADBE-B27B-4F60-8029-7AE20A856C7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertiesReflection", "PropertiesReflection\PropertiesReflection.csproj", "{9FF407AD-5E55-4757-BADA-918572BE4553}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PropertiesReflection", "PropertiesReflection\PropertiesReflection.csproj", "{9FF407AD-5E55-4757-BADA-918572BE4553}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attribute", "Attribute\Attribute.csproj", "{9A92A101-2E85-4993-9900-B3F78001C466}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attribute", "Attribute\Attribute.csproj", "{9A92A101-2E85-4993-9900-B3F78001C466}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPRINT_REFLECTION_V1", "SPRINT_REFLECTION_V1\SPRINT_REFLECTION_V1.csproj", "{1FEA35A2-69D7-472C-9E39-8687E9CE8E2D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPRINT_REFLECTION_V2", "SPRINT_REFLECTION_V2\SPRINT_REFLECTION_V2.csproj", "{31B7BE5A-55F8-4F44-AD94-8C343B4F4185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPRINT_SOLID_V3", "SPRINT_SOLID_V3\SPRINT_SOLID_V3.csproj", "{C7BEF066-48A5-4C0F-857C-916DF0DF4724}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -489,6 +495,18 @@ Global
 		{9A92A101-2E85-4993-9900-B3F78001C466}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A92A101-2E85-4993-9900-B3F78001C466}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A92A101-2E85-4993-9900-B3F78001C466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FEA35A2-69D7-472C-9E39-8687E9CE8E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FEA35A2-69D7-472C-9E39-8687E9CE8E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FEA35A2-69D7-472C-9E39-8687E9CE8E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FEA35A2-69D7-472C-9E39-8687E9CE8E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B7BE5A-55F8-4F44-AD94-8C343B4F4185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B7BE5A-55F8-4F44-AD94-8C343B4F4185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B7BE5A-55F8-4F44-AD94-8C343B4F4185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B7BE5A-55F8-4F44-AD94-8C343B4F4185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7BEF066-48A5-4C0F-857C-916DF0DF4724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7BEF066-48A5-4C0F-857C-916DF0DF4724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7BEF066-48A5-4C0F-857C-916DF0DF4724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7BEF066-48A5-4C0F-857C-916DF0DF4724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
