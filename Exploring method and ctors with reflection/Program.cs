@@ -9,14 +9,35 @@ class Program
 
         Console.WriteLine("Methods...");
 
-        foreach(MethodInfo methodInfo in myType.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
+        foreach(MethodInfo method in myType.GetMethods())
         {
-            string modificator = "";
+            Console.WriteLine($"{method.ReturnType.Name} {method.Name}(");
 
-            if (methodInfo.IsStatic) modificator += "static";
-            if (methodInfo.IsVirtual) modificator += "virtual";
+            ParameterInfo[] parameters = method.GetParameters();
 
-            Console.WriteLine($"{modificator} {methodInfo.ReturnType.Name} {methodInfo.Name} ()");
+            for (int i = 0; i < parameters.Length;i++)
+            {
+                var param = parameters[i];
+
+                string modificator = "";
+
+                if (param.IsIn) modificator = "in";
+                else if (param.IsOut) modificator = "out";
+
+
+                Console.WriteLine($"{param.ParameterType.Name} {modificator} {param.Name}");
+
+                if (param.HasDefaultValue)
+                {
+                    Console.WriteLine($"={param.HasDefaultValue}");
+                }
+                if (i < parameters.Length - 1)
+                {
+                    Console.WriteLine(",");
+                }
+
+            }
+            Console.WriteLine(")");
         }
     }
 }
@@ -32,5 +53,5 @@ class Printer
             Console.WriteLine(message);
         }
     }
-    public string CreateMessage() => DefaultMessage;
+    public string CreateMessage(out string message) => message = "Hello World";
 }
