@@ -9,7 +9,7 @@ class Program
 
         Console.WriteLine("Methods...");
 
-        foreach(MethodInfo methodInfo in myType.GetMethods())
+        foreach(MethodInfo methodInfo in myType.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
         {
             string modificator = "";
 
